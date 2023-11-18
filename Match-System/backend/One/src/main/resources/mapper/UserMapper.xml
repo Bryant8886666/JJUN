@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.two.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.two.model.domain.User">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <result property="userAccount" column="userAccount" jdbcType="VARCHAR"/>
+            <result property="avatarUrl" column="avatarUrl" jdbcType="VARCHAR"/>
+            <result property="gender" column="gender" jdbcType="VARCHAR"/>
+            <result property="userPassword" column="userPassword" jdbcType="VARCHAR"/>
+            <result property="phone" column="phone" jdbcType="VARCHAR"/>
+            <result property="email" column="email" jdbcType="VARCHAR"/>
+            <result property="userStatus" column="userStatus" jdbcType="INTEGER"/>
+            <result property="createTime" column="createTime" jdbcType="DATE"/>
+            <result property="updateTime" column="updateTime" jdbcType="DATE"/>
+            <result property="isDelete" column="isDelete" jdbcType="TINYINT"/>
+            <result property="userRole" column="userRole" jdbcType="INTEGER"/>
+            <result property="age" column="age" jdbcType="INTEGER"/>
+            <result property="grade" column="grade" jdbcType="VARCHAR"/>
+            <result property="colleage" column="colleage" jdbcType="VARCHAR"/>
+            <result property="major" column="major" jdbcType="VARCHAR"/>
+            <result property="interest" column="interest" jdbcType="VARCHAR"/>
+            <result property="contactinfo" column="contactinfo" jdbcType="VARCHAR"/>
+        <result property="profile" column="profile" jdbcType="VARCHAR"/>
+        <result property="tags" column="tags" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,username,userAccount,
+        avatarUrl,gender,userPassword,
+        phone,email,userStatus,
+        createTime,updateTime,isDelete,
+        userRole,age,
+        grade,colleage,major,
+        interest,contactinfo,profile,
+tags
+    </sql>
+</mapper>
